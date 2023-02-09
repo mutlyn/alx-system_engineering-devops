@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod "$(stat -c "%a" olleh)" hello && [ "$(stat -c "%a" olleh)" == "$(stat -c "%a" hello)" ] && echo "The file 'hello' has the same mode as the file 'olleh'." || echo "Failed to set the mode of the file 'hello' to the same as the file 'olleh'."
+chmod "$(stat -c "%a" olleh)" hello
