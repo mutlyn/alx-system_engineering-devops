@@ -1,2 +1,2 @@
 #!/bin/bash
-for dir in */ do if -d dir then chmod -R a+x dir fi
+for dir in * do if -d dir then chmod a+x dir fi
