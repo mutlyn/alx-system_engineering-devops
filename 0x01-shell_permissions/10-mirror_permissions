@@ -1,4 +1,2 @@
 #!/bin/bash
-olleh_mode=$(stat -c "%a" olleh)
-chmod "$olleh_mode" hello
-hello_mode=$(stat -c "%a" hello)
+chmod "$(stat -c "%a" olleh)" hello && [ "$(stat -c "%a" olleh)" == "$(stat -c "%a" hello)" ] && echo "The file 'hello' has the same mode as the file 'olleh'." || echo "Failed to set the mode of the file 'hello' to the same as the file 'olleh'."
